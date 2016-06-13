@@ -1,0 +1,20 @@
+ [{
+  "vcName": "LBSinaHomeController",
+  "title": "首页",
+  "imageName": "tabbar_home"
+  },
+  {
+  "vcName": "LBSinaMessageController",
+  "title": "消息",
+  "imageName": "tabbar_message_center"
+  },
+  {
+  "vcName": "LBSinaDiscoverController",
+  "title": "发现",
+  "imageName": "tabbar_discover"
+  },
+  {
+  "vcName": "LBSinaProfileController",
+  "title": "我",
+  "imageName": "tabbar_profile"
+  }]
