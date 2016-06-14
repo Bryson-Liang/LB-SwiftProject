@@ -49,7 +49,6 @@ class LBSinaTabBarController: UITabBarController {
     private func addChildControllers(vcName : String ,title :String ,imageName : String) {
         
         let vc = stringTransformToViewController(vcName)
-        tabBar.tintColor = UIColor.orangeColor()
         vc.title = title
         vc.tabBarItem.image = UIImage(named: imageName)
         vc.tabBarItem.selectedImage = UIImage(named:imageName + "_highlighted")

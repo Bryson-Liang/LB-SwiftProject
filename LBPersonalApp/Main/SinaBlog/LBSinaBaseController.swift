@@ -8,9 +8,10 @@
 
 import UIKit
 
-class LBSinaBaseController: UITableViewController {
+class LBSinaBaseController: UITableViewController,LoginViewDelegate {
 
     var userLogin = false
+    var loginView : LBLoginView?
     //替换根试图要在loadView 里替换
     override func loadView() {
         
@@ -18,8 +19,22 @@ class LBSinaBaseController: UITableViewController {
     }
     // MARK:登录视图
     private func setLoginView() {
-        view = LBLoginView()
+        loginView = LBLoginView()
+        loginView?.delegate = self
+        view = loginView
+        
+        //设置navBar
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: UIBarButtonItemStyle.Plain, target: self, action: "visitorLoginButtonClicked")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: "visitorRegisterButtonClicked")
     }
 
-   
+   // MARK: 协议
+    func visitorRegisterButtonClicked() {
+        print("注册")
+    }
+    
+    func visitorLoginButtonClicked() {
+        print("登录")
+    }
+    
 }

@@ -7,13 +7,17 @@
 //
 
 import UIKit
+//代理需要继承NSObjectProtocol, 这样才能使用weak
+protocol LoginViewDelegate : NSObjectProtocol {
+    func visitorRegisterButtonClicked()
+    func visitorLoginButtonClicked()
+}
 
 class LBLoginView: UIView {
-
+    weak var delegate : LoginViewDelegate?
     //纯代码调用
     override init(frame: CGRect) {
         super.init(frame: frame)
-      
         initUI()
     }
     //用xib 或 sb 调用
@@ -34,9 +38,34 @@ class LBLoginView: UIView {
         addViewConstraints()
     }
     
+    // MARK: 配置不同界面显示的图片和文字
+    func showLoginViewCenterImage(imageName : String , title : String , isHome : Bool){
+        if !isHome {
+            homeIconView.hidden = true
+            iconView.image = UIImage(named: imageName)
+            messageLabel.text = title
+            sendSubviewToBack(maskIconView)
+        }else {
+            homeIconView.hidden = false
+        }
+    }
     
-    
-    
+    // MARK:展示动画
+    func setupLoginViewAnimate()
+    {
+        let anim = CABasicAnimation(keyPath: "transform.rotation")
+        anim.toValue = 2 * M_PI
+        anim.duration = 20
+        anim.repeatCount = MAXFLOAT
+        iconView.layer.addAnimation(anim, forKey: nil)
+    }
+    // MARK: 点击事件
+    func loginBtnClick(){
+        delegate?.visitorLoginButtonClicked()
+    }
+    func registerBtnClick(){
+        delegate?.visitorRegisterButtonClicked()
+    }
     // MARK:懒加载
     ///图标
     lazy var iconView : UIImageView = {
@@ -72,7 +101,7 @@ class LBLoginView: UIView {
         btn.setTitle("注册", forState: UIControlState.Normal)
         btn.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal)
         btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: UIControlState.Normal)
-        
+        btn.addTarget(self, action: "registerBtnClick", forControlEvents: UIControlEvents.TouchUpInside)
         return btn
     }()
     ///登录按钮
@@ -82,7 +111,7 @@ class LBLoginView: UIView {
         btn.setTitle("登录", forState: UIControlState.Normal)
         btn.setTitleColor(UIColor.darkGrayColor(), forState: UIControlState.Normal)
         btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: UIControlState.Normal)
-        
+        btn.addTarget(self, action: "loginBtnClick", forControlEvents: UIControlEvents.TouchUpInside)
         return btn
     }()
     // MARK: 添加约束
