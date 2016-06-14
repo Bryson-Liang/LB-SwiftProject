@@ -18,8 +18,7 @@ class LBSinaBaseController: UITableViewController {
     }
     // MARK:登录视图
     private func setLoginView() {
-        view = UIView()
-        
+        view = LBLoginView()
     }
 
    
