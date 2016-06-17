@@ -7,65 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19B78A1E4AA4A8A4A7280B77 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF394042B3B95BC26FABCD44 /* Pods.framework */; };
+		2E03F5C61D1152A5009A2EE8 /* LBNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03F5C51D1152A5009A2EE8 /* LBNetworkTool.swift */; };
 		2E2F80461D0D6BC40089DD86 /* LBSinaBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F80451D0D6BC40089DD86 /* LBSinaBaseController.swift */; };
-		2E41BA3F1CEDA7360066963D /* LBPersonalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E41BA3E1CEDA7360066963D /* LBPersonalAppTests.swift */; };
-		2E41BA4A1CEDA7360066963D /* LBPersonalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E41BA491CEDA7360066963D /* LBPersonalAppUITests.swift */; };
 		2E66E8251CEF1D6B004EC8C8 /* LBSinaTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66E8241CEF1D6B004EC8C8 /* LBSinaTabBar.swift */; };
 		2E9509851CEDAD060005DFC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95097D1CEDAD060005DFC3 /* AppDelegate.swift */; };
-		2E9509861CEDAD060005DFC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9509811CEDAD060005DFC3 /* Assets.xcassets */; };
 		2E9509871CEDAD060005DFC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9509821CEDAD060005DFC3 /* LaunchScreen.storyboard */; };
 		2E9509881CEDAD060005DFC3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9509841CEDAD060005DFC3 /* Info.plist */; };
+		2EB0B1DA1D12A62600C0F0FE /* LBUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B1D91D12A62600C0F0FE /* LBUserAccount.swift */; };
 		2EB873F11D0E5836000C39F8 /* LBLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB873F01D0E5836000C39F8 /* LBLoginView.swift */; };
 		2EC5D3B11CFEED4800FD857D /* SinaBlogSetting.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EC5D3B01CFEED4800FD857D /* SinaBlogSetting.json */; };
+		2EE74C841D10FCBB00F147F6 /* LBSinaOAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE74C831D10FCBB00F147F6 /* LBSinaOAuthController.swift */; };
+		2EE74C861D1106E500F147F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE74C851D1106E500F147F6 /* Assets.xcassets */; };
 		2EFACABF1CEDCD7A00CC247D /* LBSinaHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFACABE1CEDCD7A00CC247D /* LBSinaHomeController.swift */; };
 		2EFACAC11CEDCDCA00CC247D /* LBSinaMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFACAC01CEDCDCA00CC247D /* LBSinaMessageController.swift */; };
 		2EFACAC31CEDCDED00CC247D /* LBSinaDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFACAC21CEDCDED00CC247D /* LBSinaDiscoverController.swift */; };
 		2EFACAC51CEDCE0500CC247D /* LBSinaProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFACAC41CEDCE0500CC247D /* LBSinaProfileController.swift */; };
 		2EFACAC71CEDCE8E00CC247D /* LBSinaTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFACAC61CEDCE8E00CC247D /* LBSinaTabBarController.swift */; };
-		5BEBB0EC16523296F124A6BC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7E53FA4CF76952BD79D846 /* libPods.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2E41BA3B1CEDA7360066963D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2E41BA1E1CEDA7360066963D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E41BA251CEDA7360066963D;
-			remoteInfo = LBPersonalApp;
-		};
-		2E41BA461CEDA7360066963D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2E41BA1E1CEDA7360066963D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E41BA251CEDA7360066963D;
-			remoteInfo = LBPersonalApp;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		2E03F5C51D1152A5009A2EE8 /* LBNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBNetworkTool.swift; sourceTree = "<group>"; };
 		2E2F80451D0D6BC40089DD86 /* LBSinaBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSinaBaseController.swift; sourceTree = "<group>"; };
 		2E41BA261CEDA7360066963D /* LBPersonalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBPersonalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E41BA3A1CEDA7360066963D /* LBPersonalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBPersonalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E41BA3E1CEDA7360066963D /* LBPersonalAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBPersonalAppTests.swift; sourceTree = "<group>"; };
-		2E41BA401CEDA7360066963D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E41BA451CEDA7360066963D /* LBPersonalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBPersonalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E41BA491CEDA7360066963D /* LBPersonalAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBPersonalAppUITests.swift; sourceTree = "<group>"; };
-		2E41BA4B1CEDA7360066963D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E66E8241CEF1D6B004EC8C8 /* LBSinaTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSinaTabBar.swift; sourceTree = "<group>"; };
 		2E95097D1CEDAD060005DFC3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E9509811CEDAD060005DFC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E9509831CEDAD060005DFC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E9509841CEDAD060005DFC3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EB0B1D91D12A62600C0F0FE /* LBUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUserAccount.swift; sourceTree = "<group>"; };
 		2EB873F01D0E5836000C39F8 /* LBLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBLoginView.swift; sourceTree = "<group>"; };
 		2EC5D3B01CFEED4800FD857D /* SinaBlogSetting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SinaBlogSetting.json; sourceTree = "<group>"; };
+		2EE74C831D10FCBB00F147F6 /* LBSinaOAuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSinaOAuthController.swift; sourceTree = "<group>"; };
+		2EE74C851D1106E500F147F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EFACABE1CEDCD7A00CC247D /* LBSinaHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSinaHomeController.swift; sourceTree = "<group>"; };
 		2EFACAC01CEDCDCA00CC247D /* LBSinaMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LBSinaMessageController.swift; path = ../LBSinaMessageController.swift; sourceTree = "<group>"; };
 		2EFACAC21CEDCDED00CC247D /* LBSinaDiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSinaDiscoverController.swift; sourceTree = "<group>"; };
 		2EFACAC41CEDCE0500CC247D /* LBSinaProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSinaProfileController.swift; sourceTree = "<group>"; };
 		2EFACAC61CEDCE8E00CC247D /* LBSinaTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSinaTabBarController.swift; sourceTree = "<group>"; };
-		55801BB1C2724249260CD058 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		86BF7B748E17617AFFD1EAE1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		CD7E53FA4CF76952BD79D846 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		95356B0575B67ABBBC5136E6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A8A304B12D33CB5689F694A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AF394042B3B95BC26FABCD44 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,36 +54,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BEBB0EC16523296F124A6BC /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2E41BA371CEDA7360066963D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2E41BA421CEDA7360066963D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				19B78A1E4AA4A8A4A7280B77 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E03F5C41D11527B009A2EE8 /* Http(网络请求) */ = {
+			isa = PBXGroup;
+			children = (
+				2E03F5C51D1152A5009A2EE8 /* LBNetworkTool.swift */,
+			);
+			name = "Http(网络请求)";
+			path = Http;
+			sourceTree = "<group>";
+		};
 		2E41BA1D1CEDA7360066963D = {
 			isa = PBXGroup;
 			children = (
 				2E41BA281CEDA7360066963D /* LBPersonalApp */,
-				2E41BA3D1CEDA7360066963D /* LBPersonalAppTests */,
-				2E41BA481CEDA7360066963D /* LBPersonalAppUITests */,
 				2E41BA271CEDA7360066963D /* Products */,
-				BFD8F812A3B752D87993ACC1 /* Pods */,
 				B7ED8E9972FD0A8AC3BD8F51 /* Frameworks */,
+				9959A6CDF2295D955FBB2585 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				2E41BA261CEDA7360066963D /* LBPersonalApp.app */,
-				2E41BA3A1CEDA7360066963D /* LBPersonalAppTests.xctest */,
-				2E41BA451CEDA7360066963D /* LBPersonalAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,24 +99,6 @@
 			path = LBPersonalApp;
 			sourceTree = "<group>";
 		};
-		2E41BA3D1CEDA7360066963D /* LBPersonalAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				2E41BA3E1CEDA7360066963D /* LBPersonalAppTests.swift */,
-				2E41BA401CEDA7360066963D /* Info.plist */,
-			);
-			path = LBPersonalAppTests;
-			sourceTree = "<group>";
-		};
-		2E41BA481CEDA7360066963D /* LBPersonalAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2E41BA491CEDA7360066963D /* LBPersonalAppUITests.swift */,
-				2E41BA4B1CEDA7360066963D /* Info.plist */,
-			);
-			path = LBPersonalAppUITests;
-			sourceTree = "<group>";
-		};
 		2E95097C1CEDAD060005DFC3 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +110,8 @@
 		2E95097E1CEDAD060005DFC3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2EB0B1D81D12A5BA00C0F0FE /* Data */,
+				2E03F5C41D11527B009A2EE8 /* Http(网络请求) */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -164,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				2EFACABD1CEDCD0600CC247D /* SinaBlog(微博) */,
+				2EE74C821D10FC7B00F147F6 /* SinaOAuth(授权) */,
 				2EFACAAE1CEDCC6800CC247D /* Home(首页) */,
 				2EFACAB31CEDCC6800CC247D /* Message(消息) */,
 				2EFACAA91CEDCC6800CC247D /* Discover(发现) */,
@@ -175,11 +132,19 @@
 		2E9509801CEDAD060005DFC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E9509811CEDAD060005DFC3 /* Assets.xcassets */,
+				2EE74C851D1106E500F147F6 /* Assets.xcassets */,
 				2E9509821CEDAD060005DFC3 /* LaunchScreen.storyboard */,
 				2E9509841CEDAD060005DFC3 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EB0B1D81D12A5BA00C0F0FE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2EB0B1D91D12A62600C0F0FE /* LBUserAccount.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		2EB873EF1D0E57F9000C39F8 /* View */ = {
@@ -189,6 +154,15 @@
 				2EB873F01D0E5836000C39F8 /* LBLoginView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		2EE74C821D10FC7B00F147F6 /* SinaOAuth(授权) */ = {
+			isa = PBXGroup;
+			children = (
+				2EE74C831D10FCBB00F147F6 /* LBSinaOAuthController.swift */,
+			);
+			name = "SinaOAuth(授权)";
+			path = SinaOAuth;
 			sourceTree = "<group>";
 		};
 		2EFACAA91CEDCC6800CC247D /* Discover(发现) */ = {
@@ -367,21 +341,21 @@
 			path = SinaBlog;
 			sourceTree = "<group>";
 		};
+		9959A6CDF2295D955FBB2585 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8A304B12D33CB5689F694A7 /* Pods.debug.xcconfig */,
+				95356B0575B67ABBBC5136E6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B7ED8E9972FD0A8AC3BD8F51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD7E53FA4CF76952BD79D846 /* libPods.a */,
+				AF394042B3B95BC26FABCD44 /* Pods.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BFD8F812A3B752D87993ACC1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				55801BB1C2724249260CD058 /* Pods.debug.xcconfig */,
-				86BF7B748E17617AFFD1EAE1 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,42 +381,6 @@
 			productReference = 2E41BA261CEDA7360066963D /* LBPersonalApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2E41BA391CEDA7360066963D /* LBPersonalAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2E41BA511CEDA7360066963D /* Build configuration list for PBXNativeTarget "LBPersonalAppTests" */;
-			buildPhases = (
-				2E41BA361CEDA7360066963D /* Sources */,
-				2E41BA371CEDA7360066963D /* Frameworks */,
-				2E41BA381CEDA7360066963D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2E41BA3C1CEDA7360066963D /* PBXTargetDependency */,
-			);
-			name = LBPersonalAppTests;
-			productName = LBPersonalAppTests;
-			productReference = 2E41BA3A1CEDA7360066963D /* LBPersonalAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2E41BA441CEDA7360066963D /* LBPersonalAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2E41BA541CEDA7360066963D /* Build configuration list for PBXNativeTarget "LBPersonalAppUITests" */;
-			buildPhases = (
-				2E41BA411CEDA7360066963D /* Sources */,
-				2E41BA421CEDA7360066963D /* Frameworks */,
-				2E41BA431CEDA7360066963D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2E41BA471CEDA7360066963D /* PBXTargetDependency */,
-			);
-			name = LBPersonalAppUITests;
-			productName = LBPersonalAppUITests;
-			productReference = 2E41BA451CEDA7360066963D /* LBPersonalAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -456,14 +394,6 @@
 				TargetAttributes = {
 					2E41BA251CEDA7360066963D = {
 						CreatedOnToolsVersion = 7.2;
-					};
-					2E41BA391CEDA7360066963D = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 2E41BA251CEDA7360066963D;
-					};
-					2E41BA441CEDA7360066963D = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 2E41BA251CEDA7360066963D;
 					};
 				};
 			};
@@ -481,8 +411,6 @@
 			projectRoot = "";
 			targets = (
 				2E41BA251CEDA7360066963D /* LBPersonalApp */,
-				2E41BA391CEDA7360066963D /* LBPersonalAppTests */,
-				2E41BA441CEDA7360066963D /* LBPersonalAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -494,22 +422,8 @@
 			files = (
 				2E9509871CEDAD060005DFC3 /* LaunchScreen.storyboard in Resources */,
 				2EC5D3B11CFEED4800FD857D /* SinaBlogSetting.json in Resources */,
-				2E9509861CEDAD060005DFC3 /* Assets.xcassets in Resources */,
+				2EE74C861D1106E500F147F6 /* Assets.xcassets in Resources */,
 				2E9509881CEDAD060005DFC3 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2E41BA381CEDA7360066963D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2E41BA431CEDA7360066963D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,44 +486,18 @@
 				2EFACAC51CEDCE0500CC247D /* LBSinaProfileController.swift in Sources */,
 				2EFACAC31CEDCDED00CC247D /* LBSinaDiscoverController.swift in Sources */,
 				2E66E8251CEF1D6B004EC8C8 /* LBSinaTabBar.swift in Sources */,
+				2EB0B1DA1D12A62600C0F0FE /* LBUserAccount.swift in Sources */,
 				2EFACABF1CEDCD7A00CC247D /* LBSinaHomeController.swift in Sources */,
 				2E2F80461D0D6BC40089DD86 /* LBSinaBaseController.swift in Sources */,
 				2EFACAC71CEDCE8E00CC247D /* LBSinaTabBarController.swift in Sources */,
+				2E03F5C61D1152A5009A2EE8 /* LBNetworkTool.swift in Sources */,
 				2EB873F11D0E5836000C39F8 /* LBLoginView.swift in Sources */,
+				2EE74C841D10FCBB00F147F6 /* LBSinaOAuthController.swift in Sources */,
 				2EFACAC11CEDCDCA00CC247D /* LBSinaMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E41BA361CEDA7360066963D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E41BA3F1CEDA7360066963D /* LBPersonalAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2E41BA411CEDA7360066963D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E41BA4A1CEDA7360066963D /* LBPersonalAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2E41BA3C1CEDA7360066963D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2E41BA251CEDA7360066963D /* LBPersonalApp */;
-			targetProxy = 2E41BA3B1CEDA7360066963D /* PBXContainerItemProxy */;
-		};
-		2E41BA471CEDA7360066963D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2E41BA251CEDA7360066963D /* LBPersonalApp */;
-			targetProxy = 2E41BA461CEDA7360066963D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2E9509821CEDAD060005DFC3 /* LaunchScreen.storyboard */ = {
@@ -706,77 +594,44 @@
 		};
 		2E41BA4F1CEDA7360066963D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55801BB1C2724249260CD058 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A8A304B12D33CB5689F694A7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "$(SRCROOT)/LBPersonalApp/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = lb.LBPersonalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)";
 			};
 			name = Debug;
 		};
 		2E41BA501CEDA7360066963D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86BF7B748E17617AFFD1EAE1 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 95356B0575B67ABBBC5136E6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "$(SRCROOT)/LBPersonalApp/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = lb.LBPersonalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		2E41BA521CEDA7360066963D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = LBPersonalAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lb.LBPersonalAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LBPersonalApp.app/LBPersonalApp";
-			};
-			name = Debug;
-		};
-		2E41BA531CEDA7360066963D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = LBPersonalAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lb.LBPersonalAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LBPersonalApp.app/LBPersonalApp";
-			};
-			name = Release;
-		};
-		2E41BA551CEDA7360066963D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LBPersonalAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lb.LBPersonalAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = LBPersonalApp;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		2E41BA561CEDA7360066963D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LBPersonalAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lb.LBPersonalAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = LBPersonalApp;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -797,24 +652,6 @@
 			buildConfigurations = (
 				2E41BA4F1CEDA7360066963D /* Debug */,
 				2E41BA501CEDA7360066963D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2E41BA511CEDA7360066963D /* Build configuration list for PBXNativeTarget "LBPersonalAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2E41BA521CEDA7360066963D /* Debug */,
-				2E41BA531CEDA7360066963D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2E41BA541CEDA7360066963D /* Build configuration list for PBXNativeTarget "LBPersonalAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2E41BA551CEDA7360066963D /* Debug */,
-				2E41BA561CEDA7360066963D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -61,7 +61,6 @@ class LBSinaTabBarController: UITabBarController {
         /*在swift中类是需要命名空间的, 命名空间默认是项目名称, 同一命名空间全局共享  */
         let projectName = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
         let cls : AnyClass = NSClassFromString(projectName + "." + vcName)!
-        print(cls)
         //实例化
         let vc = (cls as! UIViewController.Type).init()
         return vc

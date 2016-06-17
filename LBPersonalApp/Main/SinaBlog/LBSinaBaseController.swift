@@ -34,7 +34,9 @@ class LBSinaBaseController: UITableViewController,LoginViewDelegate {
     }
     
     func visitorLoginButtonClicked() {
-        print("登录")
+        let oauthVc = LBSinaOAuthController()
+        let nav = UINavigationController(rootViewController: oauthVc)
+        presentViewController(nav, animated: true, completion: nil)
     }
     
 }

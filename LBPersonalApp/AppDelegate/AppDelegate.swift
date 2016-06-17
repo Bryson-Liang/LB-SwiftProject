@@ -7,14 +7,20 @@
 //
 
 import UIKit
-
+import AFNetworking
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //设置网路指示器
+        AFNetworkActivityIndicatorManager.sharedManager().enabled = true
+        //设置网络缓存
+        let urlCache = NSURLCache(memoryCapacity: 4*1024*1024, diskCapacity: 20*1024*1024, diskPath: nil)
+        NSURLCache.setSharedURLCache(urlCache)
+        
         setupAppearance()
         window = UIWindow(frame:UIScreen.mainScreen().bounds)
         window?.rootViewController = LBSinaTabBarController()
@@ -22,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    // MARK:全局外观
     private func setupAppearance(){
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         UITabBar.appearance().tintColor = UIColor.orangeColor()
