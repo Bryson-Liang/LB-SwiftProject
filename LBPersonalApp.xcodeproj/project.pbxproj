@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		19B78A1E4AA4A8A4A7280B77 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF394042B3B95BC26FABCD44 /* Pods.framework */; };
 		2E03F5C61D1152A5009A2EE8 /* LBNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03F5C51D1152A5009A2EE8 /* LBNetworkTool.swift */; };
+		2E11B68D1D18E6E9000A72F1 /* LBWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E11B68C1D18E6E9000A72F1 /* LBWelcomeController.swift */; };
 		2E2F80461D0D6BC40089DD86 /* LBSinaBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F80451D0D6BC40089DD86 /* LBSinaBaseController.swift */; };
+		2E4AB03B1D17E74C000C3E77 /* LBNewFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AB03A1D17E74C000C3E77 /* LBNewFeatureController.swift */; };
 		2E66E8251CEF1D6B004EC8C8 /* LBSinaTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66E8241CEF1D6B004EC8C8 /* LBSinaTabBar.swift */; };
 		2E9509851CEDAD060005DFC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95097D1CEDAD060005DFC3 /* AppDelegate.swift */; };
 		2E9509871CEDAD060005DFC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9509821CEDAD060005DFC3 /* LaunchScreen.storyboard */; };
@@ -28,8 +30,10 @@
 
 /* Begin PBXFileReference section */
 		2E03F5C51D1152A5009A2EE8 /* LBNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBNetworkTool.swift; sourceTree = "<group>"; };
+		2E11B68C1D18E6E9000A72F1 /* LBWelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBWelcomeController.swift; sourceTree = "<group>"; };
 		2E2F80451D0D6BC40089DD86 /* LBSinaBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSinaBaseController.swift; sourceTree = "<group>"; };
 		2E41BA261CEDA7360066963D /* LBPersonalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBPersonalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4AB03A1D17E74C000C3E77 /* LBNewFeatureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBNewFeatureController.swift; sourceTree = "<group>"; };
 		2E66E8241CEF1D6B004EC8C8 /* LBSinaTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSinaTabBar.swift; sourceTree = "<group>"; };
 		2E95097D1CEDAD060005DFC3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E9509831CEDAD060005DFC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +103,16 @@
 			path = LBPersonalApp;
 			sourceTree = "<group>";
 		};
+		2E4AB0391D17E713000C3E77 /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AB03A1D17E74C000C3E77 /* LBNewFeatureController.swift */,
+				2E11B68C1D18E6E9000A72F1 /* LBWelcomeController.swift */,
+			);
+			name = "NewFeature(新特性)";
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
 		2E95097C1CEDAD060005DFC3 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +133,7 @@
 		2E95097F1CEDAD060005DFC3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2E4AB0391D17E713000C3E77 /* NewFeature(新特性) */,
 				2EFACABD1CEDCD0600CC247D /* SinaBlog(微博) */,
 				2EE74C821D10FC7B00F147F6 /* SinaOAuth(授权) */,
 				2EFACAAE1CEDCC6800CC247D /* Home(首页) */,
@@ -490,9 +505,11 @@
 				2EFACABF1CEDCD7A00CC247D /* LBSinaHomeController.swift in Sources */,
 				2E2F80461D0D6BC40089DD86 /* LBSinaBaseController.swift in Sources */,
 				2EFACAC71CEDCE8E00CC247D /* LBSinaTabBarController.swift in Sources */,
+				2E11B68D1D18E6E9000A72F1 /* LBWelcomeController.swift in Sources */,
 				2E03F5C61D1152A5009A2EE8 /* LBNetworkTool.swift in Sources */,
 				2EB873F11D0E5836000C39F8 /* LBLoginView.swift in Sources */,
 				2EE74C841D10FCBB00F147F6 /* LBSinaOAuthController.swift in Sources */,
+				2E4AB03B1D17E74C000C3E77 /* LBNewFeatureController.swift in Sources */,
 				2EFACAC11CEDCDCA00CC247D /* LBSinaMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

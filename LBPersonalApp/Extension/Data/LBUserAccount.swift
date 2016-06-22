@@ -11,6 +11,13 @@ import UIKit
 class LBUserAccount: NSObject ,NSCoding {
     // MARK:成员变量
    //Optional(["access_token": 2.00EzEyGChhDQCCd93a94b433jFqynC, "remind_in": 157679999, "uid": 1935242522, "expires_in": 157679999])
+    
+    class var isUserLogin : Bool {
+        get {
+            return LBUserAccount.loadUserAccount() != nil
+        }
+    }
+    
     var access_token : String?
     var expires_in : NSTimeInterval = 0 {
         didSet {

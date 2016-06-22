@@ -29,7 +29,7 @@ class LBNetworkTool: AFHTTPSessionManager {
     
     // MARK:加载accessToken
     func loadAccessToken(code: String, finished:(result: [String: AnyObject]?,error: NSError?) -> ()){
-        let urlString = "https://api.weibo.com/oauth2/access_token"
+        let urlString = "oauth2/access_token"
         let param = [
             "client_id": client_ID,
             "client_secret":client_secret,
@@ -42,7 +42,10 @@ class LBNetworkTool: AFHTTPSessionManager {
             }) { (_, error) -> Void in
             finished(result: nil, error: error)
         } // as? 表示可选 如果没有就返回nil ,  as!如果没有则崩溃
-       
+
     }
-    
+    // MARK:加载用户信息
+    func loadUserInfo(finished: ([String : AnyObject]? ,error : NSError?)->()){
+        
+    }
 }

@@ -8,11 +8,15 @@
 
 import UIKit
 import AFNetworking
+
+/// 切换根控制器的通知
+let LBSwitchRootVCNotification = "LBSwitchRootVCNotification"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+    let k_sandboxVersionKey = "sandboxVersionKey"
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         //设置网路指示器
@@ -22,17 +26,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSURLCache.setSharedURLCache(urlCache)
         
         setupAppearance()
+        
         window = UIWindow(frame:UIScreen.mainScreen().bounds)
-        window?.rootViewController = LBSinaTabBarController()
+        window?.rootViewController = defaultController()
         window?.makeKeyAndVisible()
         
+        
+        //注册通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "switchViewController:", name: LBSwitchRootVCNotification, object: nil)
+    
         return true
+    }
+    // MARK: 判断入口
+    private func defaultController() -> UIViewController {
+        if !LBUserAccount.isUserLogin {
+            print("用户还没登录")
+            return LBSinaTabBarController()//用户没登录
+        }
+        print("用户已登录")
+        return isNewVersion() ? LBNewFeatureController() : LBWelcomeController()
+    }
+    //判断版本
+    private func isNewVersion() -> Bool {
+        
+        let version = Double(NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"] as! String)!
+        let preVersion = NSUserDefaults.standardUserDefaults().doubleForKey(k_sandboxVersionKey)
+        
+        NSUserDefaults.standardUserDefaults().setDouble(version, forKey: k_sandboxVersionKey)
+        print("现在版本是\(version)")
+        print("之前版本是\(preVersion)")
+
+        return version != preVersion
     }
     // MARK:全局外观
     private func setupAppearance(){
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         UITabBar.appearance().tintColor = UIColor.orangeColor()
     }
+    // MARK:切换根控制器
+    func switchViewController(notice : NSNotification) {
+        let isMainVc = notice.object as! Bool
+        window?.rootViewController = isMainVc ? LBSinaTabBarController() : LBWelcomeController()
+    }
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

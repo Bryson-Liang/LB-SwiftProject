@@ -51,7 +51,9 @@ class LBSinaOAuthController: UIViewController{
             }
            let userAccount = LBUserAccount(dict: result!)
            userAccount.saveAccount()
+            NSNotificationCenter.defaultCenter().postNotificationName(LBSwitchRootVCNotification, object: false)
             SVProgressHUD.dismiss()
+            self.close()
         }
     }
     // MARK:懒加载

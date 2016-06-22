@@ -10,7 +10,7 @@ import UIKit
 
 class LBSinaBaseController: UITableViewController,LoginViewDelegate {
 
-    var userLogin = false
+    var userLogin = LBUserAccount.isUserLogin
     var loginView : LBLoginView?
     //替换根试图要在loadView 里替换
     override func loadView() {
